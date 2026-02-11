@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: fantasy, cursive;
     text-align: center;
     background: linear-gradient(to right, #ff758c, #ff7eb3);
     color: white;
@@ -8,14 +8,21 @@ body {
 }
 
 h1 {
+    font-family: cursive;
     margin-top: 40px;
 }
 
-.photo-gallery {
+p {
+    font-size: 20px;
+    margin: 40px;
+    font-family: cursive;
+}
+
+.photo-home {
     margin: 20px;
 }
 
-.photo-gallery img {
+.photo-home img {
     width: 250px;
     height: auto;
     border-radius: 15px;
@@ -25,11 +32,13 @@ h1 {
 
 .buttons {
     margin-top: 30px;
+    margin-right: 135px;
 }
 
 button {
     padding: 15px 30px;
     font-size: 18px;
+    font-family: cursive;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -46,6 +55,24 @@ button {
     background-color: #dc3545;
     color: white;
     position: absolute;
+}
+
+.date-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.date-text {
+    max-width: 400px;
+}
+
+.side-photo {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 .hidden {
