@@ -9,12 +9,14 @@ body {
 
 h1 {
     font-family: cursive;
+    color: black;
     margin-top: 40px;
     pointer-events: none;
 }
 
 p {
     font-size: 20px;
+    color: black;
     margin: 40px;
     font-family: cursive;
 }
@@ -49,12 +51,12 @@ button {
 
 #yesBtn {
     background-color: #28a745;
-    color: white;
+    color: black;
 }
 
 #noBtn {
     background-color: #dc3545;
-    color: white;
+    color: black;
     position: absolute;
     z-index: 1000;
 }
