@@ -9,8 +9,13 @@ yesBtn.addEventListener("click", () => {
 });
 
 noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * (window.innerWidth - 100);
-    const y = Math.random() * (window.innerHeight - 100);
-    noBtn.style.left = `${x}px`;
-    noBtn.style.top = `${y}px`;
+    // Only move button on desktop screens (larger than 768px)
+    if (window.innerWidth > 768) {
+        const buttonWidth = noBtn.offsetWidth;
+        const buttonHeight = noBtn.offsetHeight;
+        const x = Math.random() * (window.innerWidth - buttonWidth);
+        const y = Math.random() * (window.innerHeight - buttonHeight);
+        noBtn.style.left = `${x}px`;
+        noBtn.style.top = `${y}px`;
+    }
 });
